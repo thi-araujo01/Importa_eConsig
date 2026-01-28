@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Importa_eConsig")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1886a667297fc0a900a62dd222a138f059d97ce2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Importa_eConsig")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Importa_eConsig")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
