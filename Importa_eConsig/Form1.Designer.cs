@@ -33,10 +33,11 @@
             openFileDialog1 = new OpenFileDialog();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            dgvDados = new DataGridView();
             textBox3 = new TextBox();
             maskedTextBox1 = new MaskedTextBox();
-            dgvDados = new DataGridView();
             button2 = new Button();
+            btnTest = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvDados).BeginInit();
@@ -84,6 +85,15 @@
             tabPage1.Text = "Folha";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // dgvDados
+            // 
+            dgvDados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDados.Location = new Point(-4, 0);
+            dgvDados.Name = "dgvDados";
+            dgvDados.Size = new Size(606, 150);
+            dgvDados.TabIndex = 0;
+            dgvDados.CellContentClick += dgvDados_CellContentClick;
+            // 
             // textBox3
             // 
             textBox3.BackColor = SystemColors.ButtonFace;
@@ -105,14 +115,6 @@
             maskedTextBox1.ValidatingType = typeof(DateTime);
             maskedTextBox1.MaskInputRejected += maskedTextBox1_MaskInputRejected;
             // 
-            // dgvDados
-            // 
-            dgvDados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDados.Location = new Point(-4, 0);
-            dgvDados.Name = "dgvDados";
-            dgvDados.Size = new Size(606, 150);
-            dgvDados.TabIndex = 0;
-            // 
             // button2
             // 
             button2.Location = new Point(141, 12);
@@ -122,12 +124,23 @@
             button2.Text = "Filtrar";
             button2.UseVisualStyleBackColor = true;
             // 
+            // btnTest
+            // 
+            btnTest.Location = new Point(506, 329);
+            btnTest.Name = "btnTest";
+            btnTest.Size = new Size(100, 23);
+            btnTest.TabIndex = 6;
+            btnTest.Text = "Testar conexão";
+            btnTest.UseVisualStyleBackColor = true;
+            btnTest.Click += btnTest_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(609, 383);
+            Controls.Add(btnTest);
             Controls.Add(button2);
             Controls.Add(maskedTextBox1);
             Controls.Add(textBox3);
@@ -158,5 +171,6 @@
         private MaskedTextBox maskedTextBox1;
         private DataGridView dgvDados;
         private Button button2;
+        private Button btnTest;
     }
 }
